@@ -21,7 +21,7 @@
           <Format xmlns="syncml:metinf">chr</Format>
           <Type>text/plain</Type>
         </Meta>
-        <Data>https://www.contoso.com/desktopimage.jpeg</Data>
+        <Data>https://github.com/HaoHoo/WinMDM/raw/master/resource/locking.jpg</Data>
       </Item>
     </Replace>
     <Replace>
@@ -36,7 +36,7 @@
           <Format xmlns="syncml:metinf">chr</Format>
           <Type>text/plain</Type>
         </Meta>
-        <Data>https://www.contoso.com/lockscreenimage.JPG</Data>
+        <Data>https://github.com/HaoHoo/WinMDM/raw/master/resource/desktop.jpg</Data>
       </Item>
     </Replace>
     <Final/> 
