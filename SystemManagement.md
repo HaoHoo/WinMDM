@@ -3,6 +3,47 @@
 ## 1. 使用MDM框架的CSP添加本地管理员
 
 ```XML
+<SyncML xmlns="SYNCML:SYNCML1.2">
+  <SyncBody>
+    <Add>
+      <CmdID>2</CmdID>
+        <Item>
+          <Target>
+            <LocURI>
+              ./Device/Vendor/MSFT/Accounts/Users/UserName
+            </LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta> 
+          <Data>IT.Support</Data>
+        </Item>
+        <Item>
+          <Target>
+            <LocURI>
+              ./Device/Vendor/MSFT/Accounts/Users/UserName/Password
+            </LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">chr</Format>
+          </Meta> 
+          <Data>csp@Win10</Data>
+        </Item>
+        <Item>
+          <Target>
+            <LocURI>
+              ./Device/Vendor/MSFT/Accounts/Users/UserName/LocalUserGroup
+            </LocURI>
+          </Target>
+          <Meta>
+            <Format xmlns="syncml:metinf">int</Format>
+          </Meta> 
+          <Data>2</Data>
+        </Item>
+    </Add>
+  <Final/>
+  </SyncBody>
+</SyncML>
 ```
 ## 2. 使用MDM框架远程配置系统锁屏和桌面墙纸
 
